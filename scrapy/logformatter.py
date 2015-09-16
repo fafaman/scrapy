@@ -5,9 +5,9 @@ from twisted.python.failure import Failure
 
 from scrapy.utils.request import referer_str
 
-SCRAPEDMSG = u"Scraped from %(src)s" + os.linesep + "%(item)s"
-DROPPEDMSG = u"Dropped: %(exception)s" + os.linesep + "%(item)s"
-CRAWLEDMSG = u"Crawled (%(status)s) %(request)s (referer: %(referer)s)%(flags)s"
+SCRAPEDMSG = "Scraped from %(src)s" + os.linesep + "%(item)s"
+DROPPEDMSG = "Dropped: %(exception)s" + os.linesep + "%(item)s"
+CRAWLEDMSG = "Crawled (%(status)s) %(request)s (referer: %(referer)s)%(flags)s"
 
 
 class LogFormatter(object):
